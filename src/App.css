@@ -1,0 +1,73 @@
+video {
+object-fit: cover;
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.App {
+background-color: rgba(255, 255, 255, 0.39);
+}
+
+.container {
+display: flex;
+justify-content: center;
+}
+
+.search {
+width: 50%;
+padding: 12px 24px;
+background-color: transparent;
+font-size: 15px;
+line-height: 18px;
+background-color: transparent;
+margin-left: 0px;
+box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+border-radius: 10px 0px 0px 10px;
+}
+
+ul {
+display: flex;
+flex-direction: column;
+
+list-style: none; 
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+}
+
+li {
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: #ddd6e8;
+width: 55%;
+border-radius: 10px;
+}
+
+.btn{
+  border-radius: 0px 10px 10px 0px;
+}
+@media all and (max-width:900px ){
+  .search{
+    width: 60%;
+  }
+
+  li{
+    width: 70%;
+  }
+
+}
+
+@media all and (max-width:500px ){
+  .search{
+    width: 70%;
+  }
+
+  li{
+    width: 70%;
+  }
+}
