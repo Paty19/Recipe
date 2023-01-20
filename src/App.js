@@ -19,12 +19,14 @@ useEffect(()=>{
     const data = await responce.json();
     setMyRecipes(data.hits)
   }
+  
   getAPI();
 },[wordSubmit])
 
 const myRecipeSearch = (e) => {
   setMySearch(e.target.value);
 }
+
 
 const finalSearch = (e) => {
 e.preventDefault();
@@ -36,7 +38,8 @@ return (
 
       <div className="container">      
       <video autoPlay muted loop>      
-        <source src={video} type="video/mp4" />      
+        <source src={video} type="video/mp4" />  
+  
       </video>      
       <h1>Find a Recipe</h1>      
       </div>
